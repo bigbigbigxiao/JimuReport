@@ -37,4 +37,8 @@ public class Test2Controller {
     public void delete(){
         System.out.println("删除中。。。。");
     }
+
+    public void test(){
+        System.out.println("添加一个测试方法");
+    }
 }
