@@ -3,6 +3,7 @@ package com.jeecg.modules.jmreport.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -28,5 +29,10 @@ public class Test2Controller {
     public void queryPageList(HttpServletRequest req) {
         System.out.println("getMaxRows="+jdbcTemplate.getMaxRows());
         System.out.println("getCacheLimit="+namedParameterJdbcTemplate.getCacheLimit());
+    }
+
+    @PostMapping(value = "/update")
+    public void update(){
+        System.out.println("更新中。。。。");
     }
 }
