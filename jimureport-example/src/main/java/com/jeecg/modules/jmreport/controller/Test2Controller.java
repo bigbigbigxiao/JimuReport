@@ -24,21 +24,21 @@ public class Test2Controller {
 
     @RequestMapping(value = "/list2", method = RequestMethod.GET)
     public void queryPageList(HttpServletRequest req) {
-        System.out.println("getMaxRows="+jdbcTemplate.getMaxRows());
-        System.out.println("getCacheLimit="+namedParameterJdbcTemplate.getCacheLimit());
+        System.out.println("getMaxRows=" + jdbcTemplate.getMaxRows());
+        System.out.println("getCacheLimit=" + namedParameterJdbcTemplate.getCacheLimit());
     }
 
     @PostMapping(value = "/update")
-    public void update(){
+    public void update() {
         System.out.println("更新中。。。。");
     }
 
     @DeleteMapping(value = "/delete")
-    public void delete(){
+    public void delete() {
         System.out.println("删除中。。。。");
     }
 
-    public void test(){
+    public void test() {
         System.out.println("添加一个测试方法");
     }
 }
