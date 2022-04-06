@@ -41,4 +41,8 @@ public class Test2Controller {
     public void test() {
         System.out.println("添加一个测试方法");
     }
+
+    public void test2() {
+        System.out.println("test2");
+    }
 }
